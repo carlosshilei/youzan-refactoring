@@ -1,21 +1,29 @@
 # youzan
 
-> A Vue.js project
+> 用Vue重构有赞商城
+> Youzan refactoring with Vue
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+# 安装依赖包
+npm install 或 yarn
 
 # serve with hot reload at localhost:8080
+# 启动本地服务
 npm run dev
 
+# serve with mock server
+# 启动mock server
+npm run mock
+
 # build for production with minification
+# 压缩构建生产环境
 npm run build
 
 # build for production and view the bundle analyzer report
+# 构建生产环境并查看打包分析报告
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
