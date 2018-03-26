@@ -758,7 +758,6 @@ html {
   top: 0;
   left: 0;
   background-color: #f4f4f4;
-  z-index: 999
 }
 
 .class-category,
@@ -774,7 +773,8 @@ html {
 }
 
 .inner-content {
-  width: 100%
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .inner-content,
@@ -815,7 +815,8 @@ only screen and (min-device-pixel-ratio:1.5) {
 }
 
 .main-content {
-  height: 100%
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .main-content .category-title {

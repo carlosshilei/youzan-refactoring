@@ -1,6 +1,9 @@
 let url = {
   hotLists: '/index/hotLists',
-  banner: '/index/banner'
+  banner: '/index/banner',
+  topLists: '/category/topLists',
+  subList: '/category/subList',
+  rank: '/category/rank'
 }
 
 let host = 'http://localhost:3000'
