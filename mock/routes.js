@@ -3,5 +3,9 @@ module.exports = {
   "/index/banner": "/banner",
   "/category/topLists": "/topLists",
   "/category/subList": "/subLists",
-  "/category/rank": "/rank"
+  "/category/rank": "/rank",
+  "/search/list": "/searchLists",
+  "/goods/details": "/goodsDetail",
+  "/goods/deal": "/dealLists",
+  "/cart/add": "/addCart"
 }
