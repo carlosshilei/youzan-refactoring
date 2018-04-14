@@ -138,5 +138,37 @@ module.exports = {
   addCart: Mock.mock({
     "status": 0,
     "message": "success"
+  }),
+  cartRemove: Mock.mock({
+    "status": 0,
+    "message": "success"
+  }),
+  cartMremove: Mock.mock({
+    "status": 0,
+    "message": "删除成功"
+  }),
+  cartReduce: Mock.mock({
+    "status": 0,
+    "message": "success"
+  }),
+  cartUpdate: Mock.mock({
+    "status": 0,
+    "message": "success"
+  }),
+  cartLists: Mock.mock({
+    "status": 0,
+    "message": "success",
+    "cartList|3": [{
+      "shopId": "@int(10000,100000)",
+      "goodsList|1-2":[{
+        "id": "@int(10000,100000)",
+        "image": "@image('90x90',@color)",
+        "number": "@int(1,10)",
+        "price": "@int(10,150)",
+        "sku": "@order('全网通，玫瑰金，3+32G','全网通，香槟金，3+32G')",
+        "title": "VIVO-Y66 全网通/移动版 3+32G"
+      }],
+      "shopTitle": "@order('寻找田野','猫咪森林','老爹果园')"
+    }]
   })
 };

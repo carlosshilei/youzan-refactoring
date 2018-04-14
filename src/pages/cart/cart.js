@@ -180,7 +180,6 @@ new Vue({
             this.removeShop()
           }
           this.removePopup  = false
-          // this.$refs[`goods-${shopIndex}-${goodIndex}`][0].style.left = '0px'
         })
       }else {
         let ids = []
@@ -221,6 +220,7 @@ new Vue({
       good.startX = e.changedTouches[0].clientX
     },
     end(e,shopIndex,good,goodIndex) {
+      console.log(e.target)
       let endX = e.changedTouches[0].clientX
       let left = '0'
       if(good.startX - endX > 100) {
@@ -229,7 +229,6 @@ new Vue({
       if(endX - good.startX > 100) {
         left = '0px'
       }
-      // console.log(this.$refs[`goods-${shopIndex}-${goodIndex}`])
       Volecity(this.$refs[`goods-${shopIndex}-${goodIndex}`], {
         left
       })
@@ -237,16 +236,3 @@ new Vue({
   },
   mixins: [mixin]
 })
-
-
-// import Mock from 'mockjs'
-// let Random = Mock.Random
-
-// let data = Mock.mock({
-//   'cartList|3' :[{
-//     'goodsList|1-2' : [{
-//       id: Random.int(10000,100000),
-//       image: Mock.mock('@img(90x90,@color)')
-//     }]
-//   }]
-// })

@@ -7,5 +7,10 @@ module.exports = {
   "/search/list": "/searchLists",
   "/goods/details": "/goodsDetail",
   "/goods/deal": "/dealLists",
-  "/cart/add": "/addCart"
+  "/cart/add": "/addCart",
+  "/cart/remove": "/cartRemove",
+  "/cart/mremove": "/cartMremove",
+  "/cart/reduce": "/cartReduce",
+  "/cart/update": "/cartUpdate",
+  "/cart/list": "/cartLists"
 }
