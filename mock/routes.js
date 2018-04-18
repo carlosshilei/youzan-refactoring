@@ -12,5 +12,10 @@ module.exports = {
   "/cart/mremove": "/cartMremove",
   "/cart/reduce": "/cartReduce",
   "/cart/update": "/cartUpdate",
-  "/cart/list": "/cartLists"
+  "/cart/list": "/cartLists",
+  "/address/list": "/addressLists",
+  "/address/add": "/addressAdd",
+  "/address/remove": "/addressRemove",
+  "/address/update": "/addressUpdate",
+  "/address/setDefault": "/addressDefault"
 }

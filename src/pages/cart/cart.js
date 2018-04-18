@@ -6,7 +6,7 @@ import Vue from 'vue'
 import mixin from 'js/mixin.js'
 import axios from 'axios'
 import url from 'js/api.js'
-import Volecity from 'velocity-animate'
+import Velocity from 'velocity-animate'
 import Cart from 'js/cartService.js'
 import fetch from 'js/fetch.js'
 
@@ -229,7 +229,7 @@ new Vue({
       if(endX - good.startX > 100) {
         left = '0px'
       }
-      Volecity(this.$refs[`goods-${shopIndex}-${goodIndex}`], {
+      Velocity(this.$refs[`goods-${shopIndex}-${goodIndex}`], {
         left
       })
     }

@@ -78,7 +78,7 @@ module.exports = {
         "name": "@order('幸福西饼','HomeFacial Pro','物业365')"
       }]
     }
-  }), 
+  }),
   searchLists: Mock.mock({
     "status": 0,
     "message": "success",
@@ -90,7 +90,7 @@ module.exports = {
       "price": "@int(10,120)",
       "isPostage": "@boolean"
     }]
-  }), 
+  }),
   goodsDetail: Mock.mock({
     "status": 0,
     "message": "success",
@@ -170,5 +170,64 @@ module.exports = {
       }],
       "shopTitle": "@order('寻找田野','猫咪森林','老爹果园')"
     }]
+  }),
+  addressLists: Mock.mock({
+    "status": 0,
+    "message": "success",
+    "lists|3": [{
+      "id": "@int(10000,100000)",
+      "provinceValue": "440000",
+      "tel": /^1[385][1-9]\d{8}/,
+      "address": " 软件园 ",
+      "provinceName": " 广东省 ",
+      "name": "eason",
+      "isDefault": false,
+      "districtValue": "440106",
+      "cityName": " 广州市 ",
+      "cityValue": "440100",
+      "districtName": " 天河区 "
+    }]
+  }),
+  addressAdd: Mock.mock({
+    "message": " 测试内容 fj27",
+    "data": {
+      "name": "Carlos",
+      "cityValue": "440100",
+      "provinceValue": "440000",
+      "isDefault": false,
+      "provinceName": " 广东省 ",
+      "districtName": " 天河区 ",
+      "address": " 软件园 ",
+      "districtValue": "440106",
+      "id": 90410,
+      "cityName": " 广州市 ",
+      "tel": /^1[385][1-9]\d{8}/
+    },
+    "status": 200
+  }),
+  addressRemove: Mock.mock({
+    "status": 200,
+    "message": "success"
+  }),
+  addressUpdate: Mock.mock({
+    "status": 200,
+    "message": " 测试内容",
+    "data": {
+      "provinceName": " 广东省 ",
+      "isDefault": false,
+      "address": " 软件园 ",
+      "cityValue": "440100",
+      "tel": /^1[385][1-9]\d{8}/,
+      "districtValue": "440106",
+      "cityName": " 广州市 ",
+      "districtName": " 天河区 ",
+      "id": 90410,
+      "name": "Carlos",
+      "provinceValue": "440000"
+    }
+  }),
+  addressDefault: Mock.mock({
+    "status": 200,
+    "message": "success"
   })
 };

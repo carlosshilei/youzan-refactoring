@@ -1,10 +1,10 @@
 let url = {
   hotLists: '/index/hotLists',
   banner: '/index/banner',
-  topList: '/category/topList',
+  topList: '/category/topLists',
   subList: '/category/subList',
   rank: '/category/rank',
-  searchList: '/search/list',
+  searchLists: '/search/list',
   details: '/goods/details',
   deal: '/goods/deal',
   cartAdd: '/cart/add',
@@ -20,9 +20,7 @@ let url = {
   addressSetDefault: '/address/setDefault'
 }
 
-//开发环境和真实环境的切换
-// let host = 'http://rapapi.org/mockjsdata/23334'
-let host = 'http://rapapi.org/mockjsdata/24170'
+let host = 'http://localhost:3000'
 
 for (let key in url) {
   if (url.hasOwnProperty(key)) {

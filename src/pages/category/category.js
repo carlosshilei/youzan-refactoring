@@ -23,7 +23,7 @@ new Vue({
   },
   methods: {
     getTopLists() {
-      axios.post(url.topLists).then(
+      axios.post(url.topList).then(
         res => {
           this.topLists = res.data.lists
         }
@@ -56,5 +56,3 @@ new Vue({
   },
   mixins: [mixin]
 })
-
-
